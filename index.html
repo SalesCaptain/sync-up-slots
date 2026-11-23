@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SalesCaptain Sync-Up Slots 🎰</title>
-<link rel="icon" href=".src/salescaptainio_logo.jpeg">
+<link rel="icon" href="assets/salescaptainio_logo.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@400;600;800&family=Unbounded:wght@500;700;800;900&family=VT323&display=swap" rel="stylesheet">
@@ -457,7 +457,7 @@ kbd{font:600 10px var(--body); padding:1px 5px; border-radius:4px; border:1px so
       <div class="machine" id="machine" data-mode="idle">
         <div class="bulbs" id="bulbs" aria-hidden="true"></div>
         <header class="topper">
-          <div class="brand"><img src=".src/salescaptainio_logo.jpeg" alt="SalesCaptain logo"><span class="brand-name"><b>SALES</b><b>CAPTAIN</b></span></div>
+          <div class="brand"><img src="assets/salescaptainio_logo.jpeg" alt="SalesCaptain logo"><span class="brand-name"><b>SALES</b><b>CAPTAIN</b></span></div>
           <h1 class="title"><span class="t1">SYNC-UP</span><span class="t2">SLOTS</span></h1>
           <p class="subtitle">Data Team · who talks next?</p>
         </header>
@@ -522,7 +522,7 @@ kbd{font:600 10px var(--body); padding:1px 5px; border-radius:4px; border:1px so
    ===================================================================== */
 
 // Optional per person: announce: '...' (or a list) replaces the random announcer line when they're picked.
-// Photos live in .src/pictures/<id>.png. The wildcard never leaves the pool:
+// Photos live in assets/pictures/<id>.png. The wildcard never leaves the pool:
 // landing on them is the team JACKPOT (bonus + phrase of the day), then pull again.
 const TEAM = [
   { id: 'aliaksandra', name: 'Aliaksandra', announce: 'Spotlights on {name}... The stage is yours!' },
@@ -535,7 +535,7 @@ const TEAM = [
   { id: 'mehdi',       name: 'Mehdi' },
   { id: 'alkaios',     name: 'Alkaios', wildcard: true },
 ];
-const IMG_DIR = '.src/pictures/';
+const IMG_DIR = 'assets/pictures/';
 const JACKPOT_CHANCE = 0.10;   // fixed chance per spin (only while the wildcard is present)
 const TEASE_CHANCE = 0.25;     // how often reel 3 fakes a jackpot before slipping onto the winner
 
